@@ -41,7 +41,7 @@ else
 
   def count_sentences
     
-    self.split(/[?!.]\s+[A-Z]/).length
+    self.strip.split(/\w[?!.]/).length
 
   end
 end
