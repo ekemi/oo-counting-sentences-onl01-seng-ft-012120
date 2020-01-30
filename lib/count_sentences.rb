@@ -41,8 +41,7 @@ else
 
   def count_sentences
     
-    return self.include?("!") ||self.include?("?") ||self.include?|(".")
-
+    self.split(/[?!.]\s+[A-Z]/).length
 
   end
 end
